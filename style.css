@@ -46,13 +46,13 @@ a {
 a:visited {
   color: #DAA520;
 }
-
 @media (prefers-color-scheme: dark) {
 	body {
+	  color: #808080;
 		background-image: url('dark_mosaic.png');
-		color: #808080 ;
+		/* Background pattern from Toptal Subtle Patterns */
 	}
-	img{
+	img {
 	  border: 2px solid #808080;
 	}
 	h2 {
@@ -64,4 +64,18 @@ a:visited {
 	a:visited {
 	  color: #B8860B;
 	}
+}
+@media only screen and (max-width: 416px) {
+  img {
+    float: none;
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2 {
+    clear: both;
+    text-align: center;
+  }
 }
