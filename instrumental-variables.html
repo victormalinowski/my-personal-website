@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel='icon' type='image/x-icon' href='icon.png'>
+    <style>
+body {
+  margin: auto;
+  padding: 25px;
+  max-width: 800px;
+  margin-bottom: 50px;
+  background-color: #FFFFFF;
+  background-image: url('white_wall.webp');
+  /* Background pattern from Toptal Subtle Patterns */
+}
+img {
+  float: right;
+  width: 350px;
+  height: 250px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border: 2px solid #000000;
+}
+h1 {
+  color:#B22222;
+  font-size: 50px;
+  text-align: center;
+  font-family: Georgia;
+  font-variant: small-caps;
+}
+h2 {
+  color:#191970;
+  font-size: 30px;
+  text-align: center;
+  font-family: Georgia;
+  font-variant: small-caps;
+}
+h3 {
+  font-size: 25px;
+  text-align: center;
+  font-family: Georgia;
+  font-variant: small-caps;
+}
+p {
+  font-size: 20px;
+  text-align: justify;
+  font-family: Helvetica;
+}
+footer {
+  font-size: 20px;
+  text-align: justify;
+  font-family: Helvetica;
+}
+a {
+  color: #DAA520;
+  text-decoration: none;
+}
+a:visited {
+  color: #DAA520;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a.return {
+  color: #B22222;
+}
+.small {
+  font-size: 10px;
+  text-align: justify;
+  font-family: Helvetica;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #808080;
+    background-color: #000000;
+    background-image: url('dark_mosaic.png');
+    /* Background pattern from Toptal Subtle Patterns */
+  }
+  img {
+    border: 2px solid #808080;
+  }
+  h2 {
+    color: #4682B4;
+  }
+  a {
+    color: #B8860B;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #B8860B;
+    text-decoration: none;
+  }
+}
+@media only screen and (max-width: 416px) {
+  img {
+    float: none;
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2 {
+    clear: both;
+    text-align: center;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <h2>Instrumental Variables: The Key to Unlocking Illusive Relationships</h2>
+    <p>Posted by: <a class='return' href='https://victormalinowski.com/' title="Back to Victor's Webpage">Victor Malinowski</a> - 03 March 2022<p>
+    <h3>Confounded Logic</h3>
+    <p>
+      <img src="i1.jpg" alt="" title="">
+To mentally escape your surroundings, you begin to daydream about walking in the park on a warm summer day enjoying some tasty ice cream, but you notice this thought elicits fear rather than comfort. You recently took up statistics as a hobby and are frightened to discover that an increase in drowning incidents occurs roughly at the same time as an increase in ice cream consumption. Formally, we would say that ice cream consumption is <i>associated</i> with drowning; however, it would be absurd to conclude that ice cream consumption <i>causes</i> drowning, or vice versa. Here, an attentive observer may interject that both ice cream consumption and drowning occur most frequently in the summer, a time where people reach for a beach towel or a tasty treat to cool off from the sweltering heat. In this case, the summer weather is known as a <i>confounder</i>, that is, something that disrupts our attempt to establish a causal link between ice cream consumption and drowning.
+    </p>
+    <h3>
+      Propensity Scores
+    </h3>    
+    <p>
+      <img src="i2.gif" alt="" title="">
+This situation is an extreme example of the challenges statisticians face when attempting to perform <i>casual inference</i>, that is, determining whether a certain <i>treatment</i> causes a certain <i>outcome</i>. Luckily, you are now an intermediate-level statistician, and you know just the trick to perform effective causal inference. Returning to the example from above, you see that people consume ice cream more often in the summer than in the winter, hence you say the summer has a higher <i>propensity score</i> of ice cream consumption than the winter. You group people by propensity score, that is, separate them into summer and winter groups, and observe that any association between ice cream consumption and drowning <i>within</i> these groups melts away. Phew! However, propensity score methods are effective only if the confounders can be measured. Unfortunately, we usually cannot measure confounders as simply as taking the air temperature.
+    </p>
+    <h3>
+      Complicated Situations
+    </h3>
+    <p>
+      <img src="i3.jpg" alt="" title="">
+Suppose you have now become an advanced statistician, perhaps even a Nobel Prize laureate like <a href='https://davidcard.berkeley.edu/' target='_blank' title="Information about David Card">David Card</a>. You are the face of <i>Econometrica</i>, and can command regression to model anything you want. The year is 1993, and you are <a href='https://www.nber.org/system/files/working_papers/w4483/w4483.pdf' target='blank' title="Card's 1993 paper on the topic">attempting to determine</a> how a person's years of education impacts his or her income. You account for all the usual confounders: age, sex, ethnicity, so on and so forth using propensity score methods. You think you have it all figured out, but then something catches your attention: a person's intelligence will surely be a confounder since it impacts both years of education and income! Unfortunately, there is no universally accepted way of measuring intelligence; however, this inconvenience does not deter you.
+    </p>
+    <h3>
+      Instrumental Variables
+    </h3>
+    <p>
+      <img src="i4.jpg" alt="" title="">
+You notice that children living closer to college are more likely to enroll in higher education than those living further away. However, since childhood college proximity is <i>randomized</i>, that is, not influenced by the child, the increase in income associated with closer college proximity can be directly attributed to the increase in years of education rather than intelligence. Perferct! You found an <i>instrumental variable</i>, that is, something which allows you to circumvent unmeasured confounders and conclude that an increase in years of education does indeed <i>cause</i> an increase in income. In general settings, instrumental variables are powerful tools which can randomize treatment to break any association between treatment and unmeasured confounders, allowing us to directly conclude whether the treatment causes the outcome.
+    </p>
+  </body>
+</html>
