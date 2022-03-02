@@ -9,8 +9,8 @@ body {
 }
 img {
   float: right;
-  width: 180px;
-  height: 180px;
+  width: 350px;
+  height: 250px;
   margin-left: 20px;
   margin-bottom: 10px;
   border: 2px solid #000000;
@@ -25,18 +25,22 @@ h1 {
 h2 {
   color:#191970;
   font-size: 30px;
+  text-align: center;
   font-family: Georgia;
   font-variant: small-caps;
 }
 h3 {
   font-size: 25px;
-  margin-top: -25px;
   text-align: center;
-  margin-bottom: 50px;
   font-family: Georgia;
   font-variant: small-caps;
 }
 p {
+  font-size: 20px;
+  text-align: justify;
+  font-family: Helvetica;
+}
+footer {
   font-size: 20px;
   text-align: justify;
   font-family: Helvetica;
@@ -51,6 +55,14 @@ a:visited {
 }
 a:hover {
   text-decoration: underline;
+}
+a.return {
+  color: #B22222;
+}
+.small {
+  font-size: 10px;
+  text-align: justify;
+  font-family: Helvetica;
 }
 @media (prefers-color-scheme: dark) {
   body {
@@ -67,12 +79,11 @@ a:hover {
   }
   a {
     color: #B8860B;
+    text-decoration: none;
   }
   a:visited {
     color: #B8860B;
-  }
-  a:hover {
-  text-decoration: underline;
+    text-decoration: none;
   }
 }
 @media only screen and (max-width: 416px) {
