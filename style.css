@@ -3,30 +3,30 @@ body {
   padding: 25px;
   max-width: 750px;
   margin-bottom: 50px;
-  font-family: "Cormorant Garamond", serif;
   background-color: #FFFFFF;
+  font-family: "Cormorant Garamond", serif;
   background-image: url('white_wall.webp');
   /* Background pattern from Toptal Subtle Patterns */
 }
 img.alt1 {
+  float: right;
   width: 180px;
   height: 320px;
-  border: 2px solid black;
-  float: right;
   margin-top: 0px;
   margin-left: 20px;
   margin-right: 0px;
   margin-bottom: 10px;
+  border: 2px solid black;
 }
 img.alt2 {
+  float: left;
   width: 180px;
   height: 320px;
-  border: 2px solid black;
-  float: left;
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 20px;
   margin-bottom: 10px;
+  border: 2px solid black;
 }
 h1 {
   color:#B22222;
@@ -61,9 +61,6 @@ a:visited {
 a:hover {
   text-decoration: underline;
 }
-a.alt1 {
-  color: #B22222;
-}
 @media (prefers-color-scheme: dark) {
   body {
     color: #808080;
@@ -89,11 +86,7 @@ a.alt1 {
   a:hover {
   text-decoration: underline;
   }
-  a.alt1 {
-  color: #B22222;
-  }
 }
-
 @media only screen and (max-width: 800px) {
   img.alt1 {
     float: none;
