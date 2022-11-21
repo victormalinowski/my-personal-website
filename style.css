@@ -1,7 +1,7 @@
 body {
   margin: auto;
   padding: 25px;
-  max-width: 720px;
+  max-width: 750px;
   margin-bottom: 50px;
   background-color: #FFFFFF;
   background-image: url('white_wall.webp');
@@ -43,6 +43,7 @@ h2 {
 }
 h3 {
   font-size: 25px;
+  margin-top: -25px;
   text-align: center;
   font-family: Times;
   font-variant: small-caps;
@@ -93,7 +94,7 @@ a.alt1 {
   }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 800px) {
   img.alt1 {
     float: none;
     display: block;
@@ -114,4 +115,5 @@ a.alt1 {
     clear: both;
     text-align: center;
   }
+  p {font-size: 15px;}
 }
