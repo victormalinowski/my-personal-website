@@ -31,26 +31,26 @@ h1 {
   color:#B22222;
   font-size: 50px;
   text-align: center;
-  font-family: Garamond;
+  font-family: Times;
   font-variant: small-caps;
 }
 h2 {
   color:#191970;
   font-size: 30px;
   text-align: left;
-  font-family: Garamond;
+  font-family: Times;
   font-variant: small-caps;
 }
 h3 {
   font-size: 25px;
   text-align: center;
-  font-family: Garamond;
+  font-family: Times;
   font-variant: small-caps;
 }
 p {
   font-size: 20px;
   text-align: justify;
-  font-family: Garamond;
+  font-family: Times;
 }
 a {
   color: #DAA520;
