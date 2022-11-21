@@ -108,5 +108,7 @@ a:hover {
     clear: both;
     text-align: center;
   }
-  p {font-size: 15px;}
+  p {
+    font-size: 15px;
+  }
 }
