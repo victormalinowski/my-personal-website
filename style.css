@@ -74,7 +74,10 @@ a.alt1 {
     background-image: url('dark_mosaic.png');
     /* Background pattern from Toptal Subtle Patterns */
   }
-  img {
+  img.alt1 {
+    border: 2px solid #808080;
+  }
+  img.alt2 {
     border: 2px solid #808080;
   }
   h2 {
