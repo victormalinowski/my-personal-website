@@ -2,7 +2,17 @@ body {
   margin: auto;
   padding: 25px;
   max-width: 750px;
-  margin-bottom: 50px;
+  margin-bottom: 8px;
+  background-color: #FFFFFF;
+  font-family: "Cormorant Garamond", serif;
+  background-image: url('white_wall.webp');
+  /* Background pattern from Toptal Subtle Patterns */
+}
+footer {
+  margin: auto;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 8px;
   background-color: #FFFFFF;
   font-family: "Cormorant Garamond", serif;
   background-image: url('white_wall.webp');
@@ -68,6 +78,7 @@ a:hover {
   display: grid;
   font-size: 40px;
   text-align: center;
+  margin-bottom: 20px;
   grid-template-columns: auto auto auto auto;
 }
 @media (prefers-color-scheme: dark) {
