@@ -13,10 +13,7 @@ footer {
   font-size: 15px;
   text-align: center;
   margin-bottom: 8px;
-  background-color: #FFFFFF;
   font-family: "Cormorant Garamond", serif;
-  background-image: url('white_wall.webp');
-  /* Background pattern from Toptal Subtle Patterns */
 }
 img.alt1 {
   float: right;
@@ -110,6 +107,11 @@ a:hover {
   }
 }
 @media only screen and (max-width: 800px) {
+  footer {
+    font-size: 10px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
   img.alt1 {
     float: none;
     display: block;
