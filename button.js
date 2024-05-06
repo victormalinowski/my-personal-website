@@ -1,16 +1,16 @@
 function load() {
   const button = document.querySelector(".btn");
-  const useLight = window.matchMedia("(prefers-color-scheme: light)");
+  const useDark = window.matchMedia("(prefers-color-scheme: dark)");
 
-  function toggleLightMode(state) {
-    document.documentElement.classList.toggle("lightmode", state);
+  function toggleDarkMode(state) {
+    document.documentElement.classList.toggle("darkmode", state);
   }
 
-  toggleLightMode(useLight.matches);
-  useLight.addListener((evt) => toggleLightMode(evt.matches));
+  toggleDarkMode(useDark.matches);
+  useDark.addListener((evt) => toggleDarkMode(evt.matches));
 
   button.addEventListener("click", () => {
-    document.documentElement.classList.toggle("lightmode");
+    document.documentElement.classList.toggle("darkmode");
   });
 }
 

@@ -1,14 +1,14 @@
 /* Background patterns from Toptal Subtle Patterns */
 :root {
-  --brite: 70%;
-  --coldf: #808080;
-  --colbg: #000000;
+  --brite: 100%;
+  --coldf: black;
+  --colbg: #FFFFFF;
   --colh1: #B22222;
-  --colh2: #4682B4;
-  --colaa: #B8860B;
-  --colav: #B8860B;
+  --colh2: #191970;
+  --colaa: #DAA520;
+  --colav: #DAA520;
   --colah: #B22222;
-  --patbg: url('dark_mosaic.png');
+  --patbg: url('white_wall.webp');
 }
 body {
   color: coldf;
@@ -118,16 +118,16 @@ a:hover {
   margin-bottom: 20px;
   grid-template-columns: auto auto auto auto auto;
 }
-.lightmode {
-  --brite: 100%;
-  --coldf: black;
-  --colbg: #FFFFFF;
+.darkmode {
+  --brite: 70%;
+  --coldf: #808080;
+  --colbg: #000000;
   --colh1: #B22222;
-  --colh2: #191970;
-  --colaa: #DAA520;
-  --colav: #DAA520;
+  --colh2: #4682B4;
+  --colaa: #B8860B;
+  --colav: #B8860B;
   --colah: #B22222;
-  --patbg: url('white_wall.webp');
+  --patbg: url('dark_mosaic.png');
 }
 @media only screen and (max-width: 500px) {
   .btn {
