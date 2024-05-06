@@ -1,18 +1,32 @@
+/* Background patterns from Toptal Subtle Patterns */
+:root {
+  --brite: 100%;
+  --coldf: black;
+  --colbg: #FFFFFF;
+  --colh1: #B22222;
+  --colh2: #191970;
+  --colaa: #DAA520;
+  --colav: #DAA520;
+  --colah: #B22222;
+  --patbg: url('white_wall.webp');
+}
 body {
+  color: coldf;
   margin: auto;
-  padding: 25px;
+  padding: 35px;
   max-width: 750px;
+  transition: 0.3s;
   margin-bottom: 8px;
-  background-color: #FFFFFF;
+  background-color: var(--colbg);
+  background-image: var(--patbg);
   font-family: "Cormorant Garamond", serif;
-  background-image: url('white_wall.webp');
-  /* Background pattern from Toptal Subtle Patterns */
 }
 footer {
   margin: auto;
   font-size: 15px;
   text-align: center;
   margin-bottom: 8px;
+  color: var(--coldf);
   font-family: "Cormorant Garamond", serif;
 }
 img.alt1 {
@@ -23,7 +37,8 @@ img.alt1 {
   margin-left: 20px;
   margin-right: 0px;
   margin-bottom: 10px;
-  border: 2px solid black;
+  border: 2px solid var(--coldf);
+  filter: brightness(var(--brite));
 }
 img.alt2 {
   float: left;
@@ -33,18 +48,20 @@ img.alt2 {
   margin-left: 0px;
   margin-right: 20px;
   margin-bottom: 10px;
-  border: 2px solid black;
+  border: 2px solid var(--coldf);
+  filter: brightness(var(--brite));
 }
 h1 {
-  color:#B22222;
   font-size: 50px;
+  margin-top: 25px;
   text-align: center;
+  color: var(--colh1);
   font-variant: small-caps;
 }
 h2 {
-  color:#191970;
   font-size: 30px;
   text-align: left;
+  color: var(--colh2);
   font-variant: small-caps;
 }
 h3 {
@@ -55,18 +72,41 @@ h3 {
 }
 p {
   font-size: 21px;
+  color: var(--coldf);
   text-align: justify;
 }
 a {
-  color: #DAA520;
+  transition: 0.3s;
+  color: var(--colaa);
+  transform: scale(1);
   text-decoration: none;
 }
 a:visited {
-  color: #DAA520;
+  color: var(--colav);
   text-decoration: none;
 }
 a:hover {
-  color:#B22222;
+  transition: 0.3s;
+  color: var(--colah);
+  transform: scale(1.1);
+  text-decoration: none;
+}
+.btn {
+  margin: 0;
+  top: 10px;
+  padding: 0;
+  right: 10px;
+  border: none;
+  position: fixed;
+  cursor: pointer;
+  background: none;
+  transition: 0.3s;
+  color: var(--coldf);
+  transform: scale(1.5)
+}
+.btn:hover {
+  transition: 0.3s;
+  transform: scale(1.6);
   text-decoration: none;
 }
 .icons{
@@ -78,35 +118,24 @@ a:hover {
   margin-bottom: 20px;
   grid-template-columns: auto auto auto auto auto;
 }
-@media (prefers-color-scheme: dark) {
-  body {
-    color: #808080;
-    background-color: #000000;
-    background-image: url('dark_mosaic.png');
-    /* Background pattern from Toptal Subtle Patterns */
-  }
-  img.alt1 {
-    border: 2px solid #808080;
-  }
-  img.alt2 {
-    border: 2px solid #808080;
-  }
-  h2 {
-    color: #4682B4;
-  }
-  a {
-    color: #B8860B;
-  }
-  a:visited {
-    color: #B8860B;
-    text-decoration: none;
-  }
-  a:hover {
-    color:#B22222;
-    text-decoration: none;
-  }
+.darkmode {
+  --brite: 60%;
+  --coldf: #808080;
+  --colbg: #000000;
+  --colh1: #B22222;
+  --colh2: #4682B4;
+  --colaa: #B8860B;
+  --colav: #B8860B;
+  --colah: #B22222;
+  --patbg: url('dark_mosaic.png');
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 500px) {
+  .btn {
+    transform: scale(0.8)
+  }
+  .btn:hover {
+    transform: scale(0.9)
+  }
   footer {
     font-size: 10px;
     margin-top: 15px;
