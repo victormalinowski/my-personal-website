@@ -15,3 +15,7 @@ function load() {
 }
 
 window.addEventListener("DOMContentLoaded", load);
+
+window.onload = function() {
+            document.querySelector('html').style.display = '';
+}
