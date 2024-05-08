@@ -2,12 +2,12 @@
 :root {
   --brite: 100%;
   --coldf: black;
-  --colbg: #FFFFFF;
   --colh1: #B22222;
   --colh2: #191970;
   --colaa: #DAA520;
   --colav: #DAA520;
   --colah: #B22222;
+  --colbg: whitesmoke;
   --patbg: url('white_wall.webp');
 }
 body {
@@ -20,6 +20,7 @@ body {
   background-color: var(--colbg);
   background-image: var(--patbg);
   font-family: "Cormorant Garamond", serif;
+  border-color: var(--colbg);
 }
 footer {
   margin: auto;
@@ -120,14 +121,35 @@ a:hover {
 }
 .darkmode {
   --brite: 70%;
+  --colbg: black;
   --coldf: #808080;
-  --colbg: #000000;
   --colh1: #B22222;
   --colh2: #4682B4;
   --colaa: #B8860B;
   --colav: #B8860B;
   --colah: #B22222;
   --patbg: url('dark_mosaic.png');
+}
+::-webkit-scrollbar {
+  width: 1em;
+}
+::-webkit-scrollbar-track {
+  background-color: inherit;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border: 0.25em solid;
+  border-color: inherit;
+  background-color: var(--coldf); 
+}
+::-webkit-scrollbar-thumb:hover {
+  border: 0.2em solid;
+  border-radius: 10px;
+  border-color: inherit;
+  background-color: var(--coldf);
+}
+::-webkit-scrollbar-corner {
+  background-color: inherit;
 }
 @media only screen and (max-width: 500px) {
   .btn {
@@ -171,5 +193,8 @@ a:hover {
     font-size: 30px;
     text-align: center;
     grid-template-columns: auto auto auto auto auto;
+  }
+  ::-webkit-scrollbar {
+    width: 0.8em;
   }
 }
