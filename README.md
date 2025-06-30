@@ -51,4 +51,4 @@ MIT License
 
 ---
 
-Thank you for visiting! Connect with me via the provided social media links or view my CV directly through this website.
+Thank you for visiting!
