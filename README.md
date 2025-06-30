@@ -47,7 +47,7 @@ Feel free to fork this repository and personalize your own professional webpage:
 
 ## License
 
-Specify your license here (e.g., MIT).
+MIT License
 
 ---
 
