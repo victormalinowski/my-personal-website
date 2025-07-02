@@ -32,8 +32,8 @@ This personal webpage provides a professional introduction, including informatio
 Clone the repository and open `index.html` in your web browser:
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/victormalinowski/my-personal-website.git
+cd my-personal-website
 open index.html
 ```
 
