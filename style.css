@@ -125,9 +125,9 @@ a:hover {
   --coldf: #808080;
   --colh1: #B22222;
   --colh2: #4682B4;
-  --colaa: #B8860B;
-  --colav: #B8860B;
-  --colah: #B22222;
+  --colaa: #006633;
+  --colav: #006633;
+  --colah: #4682B4;
   --patbg: url('dark_mosaic.png');
 }
 ::-webkit-scrollbar {
